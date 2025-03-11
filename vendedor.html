@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vendedor</title>
+    <link rel="stylesheet" href="estilos.css">
+    <script src="script.js" defer></script>
+</head>
+<body class="pantalla_vendedor">
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="inicio_sesion.html">Iniciar sesión</a></li>
+                <li><a href="acerca_de.html">Acerca de</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        
+          
+            <div id="info-vendedor">
+                <p id="nombre-vendedor"></p>
+                <p id="correo-vendedor"></p>
+            </div>
+            <div class="cuadro_productos">
+                <h3>Agregar nuevo producto</h3>
+                <form id="form-producto">
+                    <label for="nombre-producto">Nombre:</label>
+                    <input type="text" id="nombre-producto" required>
+                    
+                    <label for="costo-producto">Costo:</label>
+                    <input type="number" id="costo-producto" required>
+                
+                    <label for="cantidad-producto">Cantidad:</label>
+                    <input type="number" id="cantidad-producto" required>
+                
+                    <label for="imagen-producto">Imagen:</label>
+                    <input type="file" id="imagen-producto" required>
+                
+                    <button type="submit" id="agregar-producto">Agregar Producto</button>
+                </form>
+            </div>
+            <div>
+                <h3>Productos del vendedor</h3>
+            </div>
+                <div id="productos-vendedor"></div>
+              
+        
+    </main>
+    <div>
+        <button id="cerrar-sesion">Cerrar sesión</button>
+    </div>
+</body>
+</html>
+
